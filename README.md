@@ -115,8 +115,3 @@ The app will be available at `http://localhost:8080`
 
 
 
-Perfect for showcasing full-stack development skills!
-
----
-
-**Built with Lovable** - Where ideas become apps in minutes
