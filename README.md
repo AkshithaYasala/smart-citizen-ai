@@ -1,10 +1,6 @@
 # SmartGovAI - AI-Powered e-Governance Automation
 
-A modern, full-stack web application that revolutionizes government citizen services through AI automation. Built with React, Lovable Cloud, and AI-powered chatbot support.
-
-## 🚀 Live Demo
-
-This application is deployed and ready to use! Simply click the "Publish" button in Lovable to get your live deployment link.
+A modern, full-stack web application that revolutionizes government citizen services through AI automation. Built with React, Cloud, and AI-powered chatbot support.
 
 ## ✨ Features
 
@@ -115,23 +111,6 @@ The app will be available at `http://localhost:8080`
    - View all submitted applications
    - Check real-time status updates
    - Receive email confirmations
-
-## 🎯 API Endpoints
-
-### Edge Function: ai-chat
-- **URL**: `/functions/v1/ai-chat`
-- **Method**: POST
-- **Body**: `{ "message": "your question" }`
-- **Response**: `{ "response": "AI assistant reply" }`
-
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 
 
