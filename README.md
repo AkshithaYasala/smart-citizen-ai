@@ -170,27 +170,7 @@ The application includes:
 
 This project is open source and available for use in government digitalization initiatives.
 
-## 👨‍💻 Developer
 
-Built with ❤️ using Lovable - The AI-powered app builder
-
-## 🆘 Support
-
-For issues or questions:
-- Check the [Lovable Documentation](https://docs.lovable.dev/)
-- Visit [Lovable Community](https://discord.gg/lovable)
-
-## 🎓 Resume-Ready Project
-
-This is a **complete, production-ready full-stack application** featuring:
-- Modern React frontend with TypeScript
-- Cloud backend with PostgreSQL database
-- AI integration with real-time chatbot
-- Secure file uploads and storage
-- Professional UI/UX design
-- Responsive mobile-first layout
-- Real-time data synchronization
-- Serverless architecture
 
 Perfect for showcasing full-stack development skills!
 
