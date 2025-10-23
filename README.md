@@ -95,23 +95,7 @@ The app will be available at `http://localhost:8080`
 - **Public access policies**: Configured for citizen self-service
 - **Secure file uploads**: Validated and scoped storage access
 - **CORS enabled**: Secure cross-origin requests
-
-## 🚀 Deployment
-
-### Deploy with Lovable (Recommended)
-
-1. Open your project in Lovable
-2. Click "Publish" in the top right
-3. Your app will be live with a custom URL!
-
-### Manual Deployment
-
-The application can be deployed to any platform supporting Vite apps:
-- Vercel
-- Netlify
-- Render
-- Cloudflare Pages
-
+  
 ## 📱 Usage
 
 ### For Citizens
@@ -140,23 +124,6 @@ The application can be deployed to any platform supporting Vite apps:
 - **Body**: `{ "message": "your question" }`
 - **Response**: `{ "response": "AI assistant reply" }`
 
-## 🧪 Testing
-
-The application includes:
-- Form validation
-- Error handling
-- Loading states
-- Real-time updates
-- Toast notifications
-
-## 📊 Features Roadmap
-
-- [ ] Multi-language support
-- [ ] SMS notifications
-- [ ] Payment gateway integration
-- [ ] Document verification with OCR
-- [ ] Admin dashboard
-- [ ] Advanced analytics
 
 ## 🤝 Contributing
 
@@ -166,9 +133,6 @@ The application includes:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is open source and available for use in government digitalization initiatives.
 
 
 
