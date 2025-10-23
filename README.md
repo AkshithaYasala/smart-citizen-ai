@@ -1,73 +1,199 @@
-# Welcome to your Lovable project
+# SmartGovAI - AI-Powered e-Governance Automation
 
-## Project info
+A modern, full-stack web application that revolutionizes government citizen services through AI automation. Built with React, Lovable Cloud, and AI-powered chatbot support.
 
-**URL**: https://lovable.dev/projects/0a4a0ad9-78c9-4ca8-8618-c0fd83cf5564
+## 🚀 Live Demo
 
-## How can I edit this code?
+This application is deployed and ready to use! Simply click the "Publish" button in Lovable to get your live deployment link.
 
-There are several ways of editing your application.
+## ✨ Features
 
-**Use Lovable**
+### Core Functionality
+- **Service Application Form**: Citizens can apply for:
+  - Birth Certificate
+  - Domicile Certificate
+  - Income Certificate
+- **Document Upload**: Secure file upload for supporting documents
+- **AI Chatbot**: 24/7 intelligent assistant powered by Lovable AI (Google Gemini)
+- **Real-time Tracking**: Live application status updates
+- **Email Notifications**: Automatic confirmation emails
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0a4a0ad9-78c9-4ca8-8618-c0fd83cf5564) and start prompting.
+### Technical Features
+- 🎨 Modern, responsive UI with Tailwind CSS
+- 🔒 Secure backend with Row Level Security (RLS)
+- ☁️ Cloud storage for document management
+- 🤖 AI-powered query resolution
+- 📱 Mobile-first responsive design
+- ⚡ Real-time updates with Supabase subscriptions
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Technology Stack
 
-**Use your preferred IDE**
+### Frontend
+- **React 18** - Modern UI library
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first styling
+- **shadcn/ui** - Beautiful component library
+- **Vite** - Lightning-fast build tool
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Backend (Lovable Cloud)
+- **Lovable Cloud** - Fully managed backend
+- **PostgreSQL** - Robust database
+- **Edge Functions** - Serverless API endpoints
+- **Cloud Storage** - Document management
+- **Real-time Subscriptions** - Live data updates
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### AI Integration
+- **Lovable AI Gateway** - Pre-configured AI access
+- **Google Gemini 2.5 Flash** - Fast, intelligent responses
+- No API keys required - fully integrated
 
-Follow these steps:
+## 📋 Prerequisites
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- Node.js 18+ and npm
+- Lovable account (for deployment)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🏗️ Installation
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Clone the repository**
+   ```bash
+   git clone <YOUR_GIT_URL>
+   cd smartgovai
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start development server**
+   ```bash
+   npm run dev
+   ```
+
+The app will be available at `http://localhost:8080`
+
+## 🗄️ Database Schema
+
+### Applications Table
+```sql
+- id (UUID, Primary Key)
+- name (TEXT, Required)
+- email (TEXT, Required)
+- service_type (TEXT, Required) - Birth/Domicile/Income Certificate
+- document_url (TEXT, Optional)
+- status (TEXT) - Pending/Under Review/Approved/Rejected
+- created_at (TIMESTAMP)
+- updated_at (TIMESTAMP)
 ```
 
-**Edit a file directly in GitHub**
+### Storage Buckets
+- **documents**: Public bucket for supporting documents
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🔐 Security
 
-**Use GitHub Codespaces**
+- **Row Level Security (RLS)**: All tables protected
+- **Public access policies**: Configured for citizen self-service
+- **Secure file uploads**: Validated and scoped storage access
+- **CORS enabled**: Secure cross-origin requests
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🚀 Deployment
 
-## What technologies are used for this project?
+### Deploy with Lovable (Recommended)
 
-This project is built with:
+1. Open your project in Lovable
+2. Click "Publish" in the top right
+3. Your app will be live with a custom URL!
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Manual Deployment
 
-## How can I deploy this project?
+The application can be deployed to any platform supporting Vite apps:
+- Vercel
+- Netlify
+- Render
+- Cloudflare Pages
 
-Simply open [Lovable](https://lovable.dev/projects/0a4a0ad9-78c9-4ca8-8618-c0fd83cf5564) and click on Share -> Publish.
+## 📱 Usage
 
-## Can I connect a custom domain to my Lovable project?
+### For Citizens
 
-Yes, you can!
+1. **Apply for Service**
+   - Fill in your name and email
+   - Select the certificate type
+   - Upload supporting document (optional)
+   - Submit application
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+2. **Get AI Assistance**
+   - Ask questions about required documents
+   - Get information on processing times
+   - Learn about eligibility criteria
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+3. **Track Applications**
+   - View all submitted applications
+   - Check real-time status updates
+   - Receive email confirmations
+
+## 🎯 API Endpoints
+
+### Edge Function: ai-chat
+- **URL**: `/functions/v1/ai-chat`
+- **Method**: POST
+- **Body**: `{ "message": "your question" }`
+- **Response**: `{ "response": "AI assistant reply" }`
+
+## 🧪 Testing
+
+The application includes:
+- Form validation
+- Error handling
+- Loading states
+- Real-time updates
+- Toast notifications
+
+## 📊 Features Roadmap
+
+- [ ] Multi-language support
+- [ ] SMS notifications
+- [ ] Payment gateway integration
+- [ ] Document verification with OCR
+- [ ] Admin dashboard
+- [ ] Advanced analytics
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available for use in government digitalization initiatives.
+
+## 👨‍💻 Developer
+
+Built with ❤️ using Lovable - The AI-powered app builder
+
+## 🆘 Support
+
+For issues or questions:
+- Check the [Lovable Documentation](https://docs.lovable.dev/)
+- Visit [Lovable Community](https://discord.gg/lovable)
+
+## 🎓 Resume-Ready Project
+
+This is a **complete, production-ready full-stack application** featuring:
+- Modern React frontend with TypeScript
+- Cloud backend with PostgreSQL database
+- AI integration with real-time chatbot
+- Secure file uploads and storage
+- Professional UI/UX design
+- Responsive mobile-first layout
+- Real-time data synchronization
+- Serverless architecture
+
+Perfect for showcasing full-stack development skills!
+
+---
+
+**Built with Lovable** - Where ideas become apps in minutes
